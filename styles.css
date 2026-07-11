@@ -1288,6 +1288,13 @@ a.info-value:hover {
     /* Hide on mobile navbar directly, can relocate */
   }
 
+  .section-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -1325,6 +1332,14 @@ a.info-value:hover {
 
 /* 480px (Mobile Phones) */
 @media (max-width: 480px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .nav-container {
+    padding: 0 1.25rem;
+  }
+
   .hero-title {
     font-size: 2.25rem;
   }
@@ -1341,6 +1356,37 @@ a.info-value:hover {
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skills-category {
+    padding: 1.25rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .timeline-content {
+    padding: 1.25rem;
+  }
+
+  .timeline-item {
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-dot {
+    left: -1px;
+    width: 20px;
+    height: 20px;
+    border-width: 3px;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.25rem;
   }
 
   .code-window-body {
