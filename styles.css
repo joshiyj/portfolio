@@ -120,6 +120,8 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .btn {
@@ -1252,7 +1254,8 @@ a.info-value:hover {
   }
 
   .hero-title {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
+    line-height: 1.25;
   }
 
   .navbar {
@@ -1341,7 +1344,8 @@ a.info-value:hover {
   }
 
   .hero-title {
-    font-size: 2.25rem;
+    font-size: 2.0rem;
+    line-height: 1.25;
   }
 
   .hero-actions {
