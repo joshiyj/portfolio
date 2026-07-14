@@ -13,7 +13,7 @@ export const personal = {
   location: 'Nagpur, MH, India',
   github: 'https://github.com/joshiyj',
   linkedin: 'https://www.linkedin.com/in/yash-joshi-b73b1b276',
-  resumeUrl: '/Resume_Yash_Joshi.pdf',
+  resumeUrl: 'Resume_Yash_Joshi.pdf',
   resumeFilename: 'Resume_Yash_Joshi.pdf',
 }
 
