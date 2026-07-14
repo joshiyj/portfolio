@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   CSS Custom Properties — Design System
+   ============================================================ */
+:root {
+  --accent: #ff5722;
+  --accent-hover: #ff784e;
+  --accent-glow: rgba(255, 87, 34, 0.15);
+  --bg-primary: #0a0b0e;
+  --bg-secondary: #11141a;
+  --bg-card: rgba(22, 27, 34, 0.65);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 87, 34, 0.4);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --header-height: 80px;
+}
+
+/* ============================================================
+   Base Resets
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================
+   Custom Scrollbar
+   ============================================================ */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* ============================================================
+   Accent Gradient Text Utility
+   ============================================================ */
+.accent-gradient-text {
+  background: linear-gradient(135deg, #ff5722 0%, #ff8a50 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+/* ============================================================
+   Code Syntax Highlighting
+   ============================================================ */
+.code-body { font-family: 'JetBrains Mono', 'Consolas', monospace; }
+.syn-keyword  { color: #c678dd; }
+.syn-variable { color: #61afef; }
+.syn-property { color: #e06c75; }
+.syn-string   { color: #98c379; }
+.syn-method   { color: #d19a66; }
+.syn-comment  { color: #5c6370; font-style: italic; }
+.syn-plain    { color: #abb2bf; }
+
+/* ============================================================
+   Dot Grid Decoration
+   ============================================================ */
+.dot-grid {
+  background-image: radial-gradient(rgba(255, 87, 34, 0.18) 1.5px, transparent 1.5px);
+  background-size: 14px 14px;
+}
+
+/* ============================================================
+   Section common padding
+   ============================================================ */
+.section-py {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .section-py {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/* ============================================================
+   Glow orb
+   ============================================================ */
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+}
